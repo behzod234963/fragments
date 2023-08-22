@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frFirst"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="uz.datatalim.fragments.FirstFragment">
+    </androidx.fragment.app.FragmentContainerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Button
+            android:id="@+id/btnFirst"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="First"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnSec"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Second"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
